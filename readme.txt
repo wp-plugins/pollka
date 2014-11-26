@@ -30,19 +30,19 @@ You can see who has voted, but not which answer was chosen. Default answers avai
 As above, but with answers of your choice separated by commas
 poll question='Is it simple enough?' answers='Oh yeah, Nope, Its too hard'
 
-Public
+**Public**
 Public poll - it is visible who has voted and how
 poll question="How do you like a public poll?" answers="A bit, So-so, Not at all" options="public"
 
-Secret
+**Secret**
 Secret poll - only the number of votes will be displayed
 poll question="How do you like a secret poll?" answers="A bit, So-so, Not at all" options="secret"
 
-Open
+**Open**
 Open poll - everybody can vote more than once
 poll question="How do you like a open poll?" answers="A bit, So-so, Not at all" options="open"
 
-Time constrained
+**Time constrained**
 Poll is open only for a given period of time, specified like with strtotime function.
 "10 September 2020"
 "+1 day"
@@ -60,10 +60,10 @@ Install as any other WordPress plugin - from plugin repository or upload plugin 
 No Faq so far, but I will be more than happy to help. Post via <a href="http://wp.unicornis.pl">my webpage</a>.
 
 == Screenshots ==
-1. Pic1.png
-2. Pic2.png
-3. Pic3.png
-4. Pic4.png
+1. Sample poll
+2. After voting
+3. Options page
+
 
 == Changelog ==
 
