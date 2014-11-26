@@ -24,7 +24,7 @@ There are several different types of polls available.
 
 **Default**
 You can see who has voted, but not which answer was chosen. Default answers available.
-poll question=\'Is it simple enough?'
+[poll question='Is it simple enough?']
 
 **With custom answers**
 As above, but with answers of your choice separated by commas
