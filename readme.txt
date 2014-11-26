@@ -4,7 +4,7 @@ Donate link: http://wp.unicornis.pl/pollka-poll-donation
 Tags: polls, bbpress, buddypress
 Requires at least: 3.8
 Tested up to: 4.0.1
-Version: 1.14.1
+Version: 1.14.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
@@ -82,7 +82,7 @@ No Faq so far, but I will be more than happy to help. Post via <a href="http://w
 
 
 == Changelog ==
-1.14.1
+1.14.2
 
     Fixed broken graphic link
 
