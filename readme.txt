@@ -1,5 +1,6 @@
 === pollka polls ===
 Contributors: Unicornis
+Donate link: http://wp.unicornis.pl/pollka-poll-donation
 Tags: polls, bbpress, buddypress
 Requires at least: 3.8
 Tested up to: 4.0.1
@@ -21,6 +22,10 @@ poll question='Was it difficult?' answers='Yes,No'
 All tags are easily customizable via Settings page, so you can adapt them to your page or language.
 There are several different types of polls available.
 
+Examples available on a sample page:
+<a href="http://wp.unicornis.pl/pollka-poll-plugin/">Pollka polls in action on a wordress page</a>
+<a href="http://wp.unicornis.pl/forums/topic/pollka-poll-plugin/">Pollka polls in action on a bbress forum topic</a>
+There are two sample accounts available, feel free to play with it.
 
 **Default**
 You can see who has voted, but not which answer was chosen. Default answers available.
@@ -57,7 +62,7 @@ poll question="How do you like a open, time constrained poll?" answers="A bit, S
 Install as any other WordPress plugin - from plugin repository or upload plugin zip file to the server from wp admin area.
 
 == Frequently Asked Questions ==
-No Faq so far, but I will be more than happy to help. Post via <a href="http://wp.unicornis.pl">my webpage</a>.
+No Faq so far, but I will be more than happy to help. Post via <a href="http://wp.unicornis.pl/forums/forum/pollka-polls/pollka-polls-support/">support forum.</a> 
 
 == Screenshots ==
 1. Sample poll
@@ -78,3 +83,15 @@ No Faq so far, but I will be more than happy to help. Post via <a href="http://w
  == Upgrade Notice ==
 None
 
+== Translations ==
+ 
+* English - default, always included
+* Polish: Nie na darmo to Pollka! included in the distribution 
+
+The pot file included.
+
+*Note:* All my plugins are localized/ translateable by default. This is very important for all users worldwide. 
+So please contribute your language to the plugin to make it even more useful. 
+For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) 
+and for validating the ["Poedit Editor"](http://www.poedit.net/).
+ 
