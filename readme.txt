@@ -13,18 +13,20 @@ This is a simple and flexible plugin that allows to use polls in worpress site a
 == Description ==
 Just put a shortcode into your post or page and the plugin will display a poll.
 You can also use Poll quicktag button to automate this process a bit.
-Votes are assigned to the site user, you must be logged in to vote.
-**poll question='Was it difficult?' answers='Yes,No'**
+
 Votes are assigned to the site user, you must be logged in to vote.
 
-poll question='Was it difficult?' answers='Yes,No'
+**poll question='Was it difficult?' answers='Yes,No'**
 
 All tags are easily customizable via Settings page, so you can adapt them to your page or language.
 There are several different types of polls available.
 
 Examples available on a sample page:
+
 <a href="http://wp.unicornis.pl/pollka-poll-plugin/">Pollka polls in action on a wordress page</a>
+
 <a href="http://wp.unicornis.pl/forums/topic/pollka-poll-plugin/">Pollka polls in action on a bbress forum topic</a>
+
 There are two sample accounts available, feel free to play with it.
 
 **Default**
@@ -33,28 +35,33 @@ You can see who has voted, but not which answer was chosen. Default answers avai
 
 **With custom answers**
 As above, but with answers of your choice separated by commas
-poll question='Is it simple enough?' answers='Oh yeah, Nope, Its too hard'
+
+[poll question='Is it simple enough?' answers='Oh yeah, Nope, Its too hard']
 
 **Public**
 Public poll - it is visible who has voted and how
-poll question="How do you like a public poll?" answers="A bit, So-so, Not at all" options="public"
+
+[poll question="How do you like a public poll?" answers="A bit, So-so, Not at all" options="public"]
 
 **Secret**
 Secret poll - only the number of votes will be displayed
-poll question="How do you like a secret poll?" answers="A bit, So-so, Not at all" options="secret"
+
+[poll question="How do you like a secret poll?" answers="A bit, So-so, Not at all" options="secret"]
 
 **Open**
 Open poll - everybody can vote more than once
-poll question="How do you like a open poll?" answers="A bit, So-so, Not at all" options="open"
+
+[poll question="How do you like a open poll?" answers="A bit, So-so, Not at all" options="open"]
 
 **Time constrained**
 Poll is open only for a given period of time, specified like with strtotime function.
-"10 September 2020"
-"+1 day"
-"+1 week"
-"+1 week 2 days 4 hours 2 seconds"
-"next Thursday"
-poll question="How do you like a open, time constrained poll?" answers="A bit, So-so, Not at all" options="open" time="2014-12-31"
+* "10 September 2020"
+* "+1 day"
+* "+1 week"
+* "+1 week 2 days 4 hours 2 seconds"
+* "next Thursday"
+
+[poll question="How do you like a open, time constrained poll?" answers="A bit, So-so, Not at all" options="open" time="2014-12-31"]
 
 
 
