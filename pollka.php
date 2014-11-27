@@ -6,7 +6,7 @@
 	Author:		    Unicornis
 	Author URI:	    http://wordpress.unicornis.pl/
     Text Domain:    Pollka
-	Version:	    1.14
+	Version:	    1.14.2
 */
 class wp_polls {
 	function __construct() {
