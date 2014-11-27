@@ -82,6 +82,7 @@ No Faq so far, but I will be more than happy to help. Post via <a href="http://w
 
 
 == Changelog ==
+
 1.14.2
 
     Fixed broken graphic link
