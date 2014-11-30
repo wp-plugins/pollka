@@ -6,8 +6,9 @@
 	Author:		    Unicornis
 	Author URI:	    http://wordpress.unicornis.pl/
     Text Domain:    Pollka
-	Version:	    1.14.2
+	Version:	    1.14.4
 */
+
 class wp_polls {
 	function __construct() {
 		global $wpdb;
@@ -31,7 +32,9 @@ class wp_polls {
                         'time_tag'     => __('time','pollka'),
                         'time_dflt'    => '',
                         'summary_tag'  => __('summary','pollka'),
-                        'summary_dflt' => 'off'
+                        'summary_dflt' => 'off',
+                        'bar_color'    => '#555555',
+                        'options_color'=> '#555555'
 		);
 		$this->opts = (array)get_option('poll_options') + $this->opts;
 
@@ -254,7 +257,7 @@ class wp_polls {
 						break;
 					default: date_default_timezone_set('UTC');
                                                  //break; 
-                                                 return '[ankieta '.$optionsStr.']';
+                                                 return '['.$this->opts['shortcode'].' '.$optionsStr.']';
 				}
 			}
 		}
@@ -293,21 +296,24 @@ class wp_polls {
 				$i
 			));
 
-			$out .= $i.". ".sprintf('<span class="poll_bar_empty" style="display: %s;"><span class="poll_bar_full" style="display: %s; width: %s%%;" id="%s"></span></span>',
-				($showResults  ? 'inline-block' : 'none'),
+			$out .= $i.". ".sprintf('<span class="poll_bar_empty" style="display: %s;"><span class="poll_bar_full" style="background: %s;  display: %s; width: %s%%;" id="%s"></span></span>',
+                                ($showResults  ? 'inline-block' : 'none'),
+                                $this->opts['bar_color'],
 				($showResults ? 'block' : 'none'),
 				($votes > 0 ? round($num_votes > 0 ? 100 * $votes / $num_votes : 0) : 0),
 				'bar-bar-' . $post->ID . '-' . $this->poll_count . '-' . $i
 			);
 			
-			$out .= sprintf('<span class="poll_option"><input type="radio" value="%s" name="%s" %s %s vote_option="%s" /> %s</span> <span class="poll_votes" style="display: %s;" id="%s">(%s)</span> <br />',
-				$i,
+			$out .= sprintf('<span class="poll_option" style="color: %s;"><input type="radio" value="%s" name="%s" %s %s vote_option="%s" /> %s</span> <span class="poll_votes" style="color: %s; display: %s;" id="%s">(%s)</span> <br />',
+				$this->opts['options_color'],
+                                $i,
 				'poll-' . $this->poll_count,
 				($usr_vote == $i ? 'checked' : ''),
 				(!$canVote ? 'disabled' : ''),
 				$opt,
 				$opt,
-				(!$canVote ? 'none' : 'none'),
+                                 $this->opts['options_color'],
+				(!$canVote ? 'inline' : 'none'),
 				'bar-cnt-' . $post->ID . '-' . $this->poll_count . '-' . $i,
 				$votes
 			);
@@ -450,7 +456,9 @@ class wp_polls {
                                 'time_tag'     => $_POST['time'],
                                 'time_dflt'    => $_POST['time_dflt'],
                                 'summary_tag'  => $_POST['summary'],
-                                'summary_dflt' => $_POST['summary_dflt']  
+                                'summary_dflt' => $_POST['summary_dflt'],
+                                'bar_color'    => $_POST['bar_color'],
+                                'options_color'=> $_POST['options_color']  
 			);
 			update_option('poll_options', $options_update);
 		}
@@ -478,7 +486,7 @@ class wp_polls {
                 echo '</td>';
 		printf('<td>   <input type="text" name="shortcode" value="%s" size="10" />', $this->opts['shortcode']);
 		echo '</td><td></td><td><small>';
-                _e('Allow for interoperability with other plugins using the same shortcode or to localize shotdcode to local language','pollka');
+                _e('Allow for interoperability with other plugins using the same shortcode or to localize shortcode to local language','pollka');
 		echo '</small></td></tr><tr><td>';
                 echo '<tr><td>';
                 _e('Question tag','pollka');
@@ -530,14 +538,28 @@ class wp_polls {
                 echo '</td><td>';
                 printf('<input type="checkbox" name="open_dflt" %s />', $this->opts['open_dflt'] == 'on' ? 'checked' : '');
                 echo '</td><td><small>';
-                _e('Open tag in a shortcode. Voting can be repeated.','pollka');
+                _e('Open tag in a shortcode. Voting can be repeated by each user.','pollka');
                 echo '</small></td></tr><tr><td>';
                 _e('Summary','pollka');
                 printf('</td><td> <input type="text" name="summary" value="%s" size="10" />', $this->opts['summary_tag']);
                 echo '</td><td>';
                 printf('<input type="checkbox" name="summary_dflt" %s />', $this->opts['summary_dflt'] == 'on' ? 'checked' : '');
                 echo '</td><td><small>';
-                _e('Summary tag in a shortcode. Show summary for the time constrained poll when the time is up.','pollka');
+                _e('Summary tag in a shortcode. Show summary for the time constrained poll when the time is up. Visible everybody, not for those who just voted.','pollka');
+                echo '</small></td></tr><td>';
+                _e('Bar color','pollka');
+                printf('</td><td> <input type="text" name="bar_color" value="%s" size="10" />', $this->opts['bar_color']);
+                echo '</td><td></td><td><small>';
+                _e('Bar color #hex code with trailing #. ','pollka');        
+                printf('</small><small style="color:'.$this->opts['bar_color'].';">');
+                _e('This text is in your chosen color.','pollka');
+                echo '</small></td></tr><td>';
+                _e('Options color','pollka');
+                printf('</td><td> <input type="text" name="options_color" value="%s" size="10" />', $this->opts['options_color']);
+                echo '</td><td></td><td><small>';
+                _e('Options color #hex code with trailing #. ','pollka');
+                printf('</small><small style="color:'.$this->opts['options_color'].';">');
+                _e('This text is in your chosen color.','pollka');
                 echo '</small></td></tr>';
 		echo '</table><p class="submit"><input type="submit" class="button-primary" name="option-submit" value="';
                 _e('Update Options','pollka');
