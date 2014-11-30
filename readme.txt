@@ -9,7 +9,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
 
-This is a simple and flexible plugin that allows to use polls in worpress site and bbpress forums. The poll can be created by *any* registered user. 
+This is a simple and flexible plugin that allows to use polls in worpress site and bbpress forums. The poll can be created by any registered user. 
 
 == Description ==
 Just put a shortcode into your post or page and the plugin will display a poll.
@@ -17,7 +17,7 @@ You can also use Poll quicktag button to automate this process a bit.
 
 Votes are assigned to the site user, **you must be logged in to vote.**
 
-Poll can be created by any user, not just editor, **even without access to the wp-admin part.** Polls are compatible with bbpress and buddypress posts.
+Poll can be created by any user, not just editor, **even without access to the wp-admin part.** Polls are compatible with **bbpress** and **buddypress** posts.
 
 **[poll question='Was it difficult?' answers='Yes,No']**
 
