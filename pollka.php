@@ -1,12 +1,12 @@
 <?php
 /*
 	Plugin Name:	Pollka polls
-	Plugin URI:	    http://wordpress.unicornis.pl
+	Plugin URI:	    http://wp.unicornis.pl
 	Description:	Simple and flexible polls for WordPress and bbPress.
 	Author:		    Unicornis
-	Author URI:	    http://wordpress.unicornis.pl/
+	Author URI:	    http://wp.unicornis.pl/
     Text Domain:    Pollka
-	Version:	    1.14.4
+	Version:	    1.14.5
 */
 
 class wp_polls {
