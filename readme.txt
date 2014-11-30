@@ -1,10 +1,10 @@
 === pollka polls ===
 Contributors: Unicornis
 Donate link: http://wp.unicornis.pl/pollka-poll-donation
-Tags: polls, bbpress, buddypress
+Tags: polls, bbpress
 Requires at least: 3.8
 Tested up to: 4.0.1
-Version: 1.14.4
+Version: 1.14.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
@@ -17,7 +17,7 @@ You can also use Poll quicktag button to automate this process a bit.
 
 Votes are assigned to the site user, **you must be logged in to vote.**
 
-Poll can be created by any user, not just editor, **even without access to the wp-admin part.** Polls are compatible with **bbpress** and **buddypress** posts.
+Poll can be created by any user, not just editor, **even without access to the wp-admin part.** Polls are compatible with **bbpress** posts.
 
 **[poll question='Was it difficult?' answers='Yes,No']**
 
@@ -84,6 +84,9 @@ No Faq so far, but I will be more than happy to help. Post via <a href="http://w
 
 
 == Changelog ==
+1.14.5
+   Tags corrected.
+
 1.14.4
    Added ability to customize colors with options settings screen.
 
