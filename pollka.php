@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name:	Pollka polls
-	Plugin URI:	    http://wp.unicornis.pl
+	Plugin URI:	    http://pollka.unicornis.pl
 	Description:	Simple and flexible polls for WordPress and bbPress.
 	Author:		    Unicornis
 	Author URI:	    http://pollka.unicornis.pl/
