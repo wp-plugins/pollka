@@ -26,9 +26,9 @@ There are several different types of polls available.
 
 Examples available on a sample page:
 
-<a href="http://wp.unicornis.pl/pollka-poll-plugin/">Pollka polls in action on a wordress page</a>
+<a href="http://pollka.unicornis.pl/pollka-poll-plugin/">Pollka polls in action on a wordress page</a>
 
-<a href="http://wp.unicornis.pl/forums/topic/pollka-poll-plugin/">Pollka polls in action on a bbress forum topic</a>
+<a href="http://pollka.unicornis.pl/forums/topic/pollka-poll-plugin/">Pollka polls in action on a bbress forum topic</a>
 
 There are two sample accounts available, feel free to play with it.
 
@@ -75,7 +75,7 @@ Poll is open only for a given period of time, specified like with strtotime func
 Install as any other WordPress plugin - from plugin repository or upload plugin zip file to the server from wp admin area.
 
 == Frequently Asked Questions ==
-No Faq so far, but I will be more than happy to help. Post via <a href="http://wp.unicornis.pl/forums/forum/pollka-polls/pollka-polls-support/">support forum.</a> 
+No Faq so far, but I will be more than happy to help. Post via <a href="http://pollka.unicornis.pl/forums/forum/pollka-polls/pollka-polls-support/">support forum.</a> 
 
 == Screenshots ==
 1. Sample poll
