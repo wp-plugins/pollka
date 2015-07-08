@@ -4,9 +4,9 @@
 	Plugin URI:	    http://wp.unicornis.pl
 	Description:	Simple and flexible polls for WordPress and bbPress.
 	Author:		    Unicornis
-	Author URI:	    http://wp.unicornis.pl/
+	Author URI:	    http://pollka.unicornis.pl/
     Text Domain:    Pollka
-	Version:	    1.14.5
+	Version:	    1.14.6
 */
 
 class wp_polls {
