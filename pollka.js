@@ -2,6 +2,7 @@ jQuery(document).ready(function() {
 	jQuery('.poll_vote_button').click(function() {
 		var group = jQuery(this).attr('poll_group');
 		var canVote = jQuery(this).attr('poll_canVote');
+        var openPoll = jQuery(this).attr('poll_openPoll');
 		//window.alert(group);
 		var poll_id = jQuery(this).attr('poll_id');
 		var option = jQuery('input[name=' + group + ']:checked').val();
@@ -12,9 +13,11 @@ jQuery(document).ready(function() {
 				jQuery('#' + group + ' span.poll_bar_empty').css('display', 'inline-block');
 				jQuery('#' + group + ' span.poll_bar_full').css('display', 'block');
 				jQuery('#' + group + ' p.poll_voter_list').css('display', 'block');
-				jQuery('input[name=' + group + ']').prop('disabled', true);
-				jQuery('input[name=' + group + ']').prop('readonly', true);
-				jQuery('input[name=button_' + group + ']').hide();
+			    if (!openPoll) {
+                	jQuery('input[name=' + group + ']').prop('disabled', true);
+			        jQuery('input[name=' + group + ']').prop('readonly', true);
+			        jQuery('input[name=button_' + group + ']').hide();
+                }
 				jQuery(response).find('vote').each(function() {
 					var id = jQuery(this).attr('id');
 					var pol = jQuery(this).attr('poll');

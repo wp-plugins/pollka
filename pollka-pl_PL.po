@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pollka\n"
-"POT-Creation-Date: 2014-11-30 10:53+0100\n"
-"PO-Revision-Date: 2014-11-30 10:55+0100\n"
+"POT-Creation-Date: 2015-08-02 17:33+0100\n"
+"PO-Revision-Date: 2015-08-02 17:36+0100\n"
 "Last-Translator: Jędrzej Skrzynecki <j@unicornis.pl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -35,15 +35,15 @@ msgstr "Tak,Nie"
 msgid "options"
 msgstr "opcje"
 
-#: pollka.php:26
+#: pollka.php:26 pollka.php:467
 msgid "secret"
 msgstr "tajne"
 
-#: pollka.php:28
+#: pollka.php:28 pollka.php:468
 msgid "public"
 msgstr "jawna"
 
-#: pollka.php:30
+#: pollka.php:30 pollka.php:470
 msgid "open"
 msgstr "otwarta"
 
@@ -51,11 +51,15 @@ msgstr "otwarta"
 msgid "time"
 msgstr "czas"
 
-#: pollka.php:34
+#: pollka.php:34 pollka.php:469
 msgid "summary"
 msgstr "podsumowanie"
 
 #: pollka.php:144
+msgid "Total: "
+msgstr "Razem:"
+
+#: pollka.php:145 pollka.php:161
 #, php-format
 msgid "1 vote"
 msgid_plural "%d votes"
@@ -63,75 +67,101 @@ msgstr[0] "1 głos"
 msgstr[1] "%d głosy"
 msgstr[2] "%d głosów"
 
-#: pollka.php:151
+#: pollka.php:167 pollka.php:180
 msgid "myself"
 msgstr "ja"
 
-#: pollka.php:169 pollka.php:414
+#: pollka.php:198 pollka.php:472
 msgid "Poll"
 msgstr "Ankieta"
 
-#: pollka.php:170
+#: pollka.php:199
 msgid "Question"
 msgstr "Pytanie"
 
-#: pollka.php:171
+#: pollka.php:200
 msgid "Poll for what?"
 msgstr "Twoje pytanie?"
 
-#: pollka.php:172 pollka.php:413
+#: pollka.php:201 pollka.php:465
 msgid "Answers (comma separated)"
 msgstr "Odpowiedzi (rozdzielone przecinkami)"
 
-#: pollka.php:282
+#: pollka.php:310
 msgid "Vote"
 msgstr "Głosuj"
 
-#: pollka.php:287
+#: pollka.php:315
 msgid "Poll open until "
 msgstr "Ankieta otwarta do "
 
-#: pollka.php:411
+#: pollka.php:463
 msgid "Poll question"
 msgstr "Pytanie ankiety"
 
-#: pollka.php:412
+#: pollka.php:464
 msgid "Your poll question goes here"
 msgstr "Wpisz swoje pytanie"
 
-#: pollka.php:440
+#: pollka.php:466
+msgid "Options (comma separated - you can leave as is for default settings)"
+msgstr ""
+"Opcje (oddzielone przecinkami, jeśli pozostawisz puste, zostaną przyjęte "
+"domyślne)"
+
+#: pollka.php:467
+msgid "- No info about who has voted and how"
+msgstr "- Ukrywa informacje kto i jak głosował"
+
+#: pollka.php:468
+msgid "- Displays info who and how voted"
+msgstr "- Wyświetla informacje kto i jaki głos oddał"
+
+#: pollka.php:469
+msgid "- Displays summary after the poll is closed"
+msgstr "- Wyświetla podsumowanie po zamknięciu ankiety"
+
+#: pollka.php:470
+msgid "- Everybody can vote more than once"
+msgstr "- Każdu może zagłosować powtórnie"
+
+#: pollka.php:471
+msgid "End time (leave blank if should be open forever)"
+msgstr "Czas zamknięcia ankiety (pozostaw puste, aby jej nie zamykać)"
+
+#: pollka.php:507
 msgid "Sorry, you do not have permissions to manage options."
 msgstr "Przepraszam, nie masz uprawnień do zmiany opcji."
 
-#: pollka.php:470
+#: pollka.php:537
 msgid "Pollka Poll Options"
 msgstr "Pollka Poll - Opcje"
 
-#: pollka.php:472
+#: pollka.php:539
 msgid "Control the behaviour of the Pollka polls plugin."
 msgstr "Zmiana parametrów wtyczki Pollka Polls."
 
-#: pollka.php:477
+#: pollka.php:544
 msgid "Tag"
 msgstr "Znacznik"
 
-#: pollka.php:479
+#: pollka.php:546
 msgid "Value"
 msgstr "Wartość"
 
-#: pollka.php:481
+#: pollka.php:548
 msgid "Default"
 msgstr "Domyślna"
 
-#: pollka.php:483
+#: pollka.php:550
 msgid "Description"
 msgstr "Opis"
 
-#: pollka.php:485
+#: pollka.php:552
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: pollka.php:489
+#: pollka.php:556
 msgid ""
 "Allow for interoperability with other plugins using the same shortcode or to "
 "localize shortcode to local language"
@@ -139,92 +169,92 @@ msgstr ""
 "Dla zapewnienia poprawnej współpracy z innymi wtyczkami lub dostosowania do "
 "języka strony."
 
-#: pollka.php:492
+#: pollka.php:559
 msgid "Question tag"
 msgstr "Tag pytania"
 
-#: pollka.php:495
+#: pollka.php:562
 msgid "Question tag in a shortcode."
 msgstr "Znacznik pytania w shortcode wtyczki."
 
-#: pollka.php:497
+#: pollka.php:564
 msgid "Answers tag"
 msgstr "Tag odpowiedzi"
 
-#: pollka.php:500
+#: pollka.php:567
 msgid "Answers tag in a shortcode."
 msgstr "Znacznik odpowiedzi w shortcode wtyczki."
 
-#: pollka.php:502
+#: pollka.php:569
 msgid "Default answers"
 msgstr "Domyślne odpowiedzi"
 
-#: pollka.php:505
+#: pollka.php:572
 msgid "Default answers."
 msgstr "Domyślne odpowiedzi."
 
-#: pollka.php:507
+#: pollka.php:574
 msgid "Options tag"
 msgstr "Tag opcji"
 
-#: pollka.php:510
+#: pollka.php:577
 msgid "Options tag in a shortcode."
 msgstr "Znacznik opcji w shortcode wtyczki."
 
-#: pollka.php:512
+#: pollka.php:579
 msgid "Secret tag"
 msgstr "Tag tajnej ankiety"
 
-#: pollka.php:517
+#: pollka.php:584
 msgid ""
 "Secret voting tag in a shortcode. Poll results will not show who has voted."
 msgstr ""
 "Znacznik ankiety tajnej w shortcode wtyczki. Nie będzie widać kto ani jak "
 "głosował."
 
-#: pollka.php:519
+#: pollka.php:586
 msgid "Public tag"
 msgstr "Tag jawnej ankiety"
 
-#: pollka.php:524
+#: pollka.php:591
 msgid ""
 "Public poll tags in a shortcode. Poll results will show choice by each voter."
 msgstr ""
 "Znacznik ankiety tajnej w shortcode wtyczki. Będzie widać kto i jak głosował."
 
-#: pollka.php:526
+#: pollka.php:593
 msgid "Time tag"
 msgstr "Znacznik czas"
 
-#: pollka.php:529
+#: pollka.php:596
 msgid "Time tag in a shortcode."
 msgstr "Znacznik czas w shortcode wtyczki"
 
-#: pollka.php:531
+#: pollka.php:598
 msgid "Default poll duration"
 msgstr "Domyślna długość trwania"
 
-#: pollka.php:534
+#: pollka.php:601
 msgid "Default poll duration (strtotime format). Empty = forever."
 msgstr ""
 "Domyślny czas otwarcia ankiety (format funkcji strtotime). Pusty = bez "
 "ograniczeń."
 
-#: pollka.php:536
+#: pollka.php:603
 msgid "Open tag"
 msgstr "Znacznik ankiety otwartej w shortcode wtyczki."
 
-#: pollka.php:541
+#: pollka.php:608
 msgid "Open tag in a shortcode. Voting can be repeated by each user."
 msgstr ""
 "Znacznik ankiety otwartej w shortcode wtyczki. Użytkownik może zmienić "
 "oddany głos."
 
-#: pollka.php:543
+#: pollka.php:610
 msgid "Summary"
 msgstr "Podsumowanie"
 
-#: pollka.php:548
+#: pollka.php:615
 msgid ""
 "Summary tag in a shortcode. Show summary for the time constrained poll when "
 "the time is up. Visible everybody, not for those who just voted."
@@ -233,27 +263,27 @@ msgstr ""
 "ograniczonej czasowo wyświetlone zostanie podsumowanie wyników. Widoczne dla "
 "wszystkich, nie tylko dla tych, którzy zagłosowali. "
 
-#: pollka.php:550
+#: pollka.php:617
 msgid "Bar color"
 msgstr "Kolor paska"
 
-#: pollka.php:553
+#: pollka.php:620
 msgid "Bar color #hex code with trailing #. "
 msgstr "Kolor paska podany jako #hex (wraz ze znakiem #)."
 
-#: pollka.php:555 pollka.php:562
+#: pollka.php:622 pollka.php:629
 msgid "This text is in your chosen color."
 msgstr "Ten tekst jest w wybranym przez Ciebie kolorze."
 
-#: pollka.php:557
+#: pollka.php:624
 msgid "Options color"
 msgstr "Kolor opcji"
 
-#: pollka.php:560
+#: pollka.php:627
 msgid "Options color #hex code with trailing #. "
 msgstr "Kolor opcji podany jako #hex (wraz ze znakiem #)."
 
-#: pollka.php:565
+#: pollka.php:632
 msgid "Update Options"
 msgstr "Zapisz ustawienia"
 

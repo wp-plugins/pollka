@@ -33,6 +33,11 @@ input.poll_vote_button {
 }
 .poll_voter {
 	font-weight: bold;
+    font-size: 70%
+}
+.poll_answers {
+    font-weight: bold;
+    font-size: 70%
 }
 .poll_voter_list {
 	margin: 6px 0 0;
